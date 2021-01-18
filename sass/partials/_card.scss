@@ -1,0 +1,19 @@
+.card {
+  border: none;
+  border-radius: 10px;
+  @include shadow;
+
+  .h5 {
+    color: $heading-color-small;
+    font-weight: 600;
+  }
+
+  .h6 {
+    color: $primary;
+  }
+
+  .btn {
+    width: 100%;
+    margin: 0;
+  }
+}

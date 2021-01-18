@@ -1,0 +1,54 @@
+button,
+.btn {
+  padding: 0.8rem 2rem;
+  margin: 1.5rem 0;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  font-family: $base-font;
+  cursor: pointer;
+  font-weight: 500;
+  color: $body-copy-color;
+  transition: filter ease-in 0.15s;
+}
+
+button:hover {
+  filter: brightness(115%);
+  transition: filter ease-in 0.15s;
+}
+
+button:active {
+  transform: translateY(2px);
+  transition: filter ease-in 0.15s;
+}
+
+.cta-btn {
+  @include gradient(1);
+}
+
+.reg-btn {
+  background: $aquamarine-medium;
+}
+
+.ghost-btn {
+  background: none;
+  border: 2px solid $aquamarine-medium-dark;
+  color: $aquamarine-medium-dark;
+}
+
+a {
+  color: $turquoise-strong;
+  text-decoration: none;
+  transition: ease-in 0.15s;
+}
+p a {
+  border-bottom: 1px solid $turquoise-strong;
+}
+
+a:hover,
+a:focus {
+  color: $turquoise-dark;
+  border-color: $turquoise-dark;
+  transition: ease-in 0.15s;
+}

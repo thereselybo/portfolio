@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Raleway:wght@400;500&display=swap");
+
+/* base color 1 - turquoise*/
+$turquoise-base: 174;
+$turquoise-super-light: hsl($turquoise-base, 30%, 95%);
+$turquoise-light: hsl($turquoise-base, 43%, 80%);
+$turquoise-medium: hsl($turquoise-base, 45%, 62%);
+$turquoise-strong: hsl($turquoise-base, 40%, 40%);
+$turquoise-dark: hsl($turquoise-base, 15%, 25%);
+
+/* base color 2 - light-sky */
+$light-sky-base: 196;
+$light-sky-light: hsl($light-sky-base, 53%, 85%);
+$light-sky-medium: hsl($light-sky-base, 55%, 68%);
+$light-sky-strong: hsl($light-sky-base, 40%, 40%);
+$light-sky-dark: hsl($light-sky-base, 15%, 25%);
+
+/* base color 3 - aquamarine */
+$aquamarine-base: 146;
+$aquamarine-light: hsl($aquamarine-base, 34%, 80%);
+$aquamarine-medium: hsl($aquamarine-base, 42%, 64%);
+$aquamarine-strong: hsl($aquamarine-base, 40%, 40%);
+$aquamarine-medium-dark: hsl($aquamarine-base, 40%, 37%);
+$aquamarine-dark: hsl($aquamarine-base, 15%, 25%);
+
+/* base gray */
+$gray-base: hsl($turquoise-base, 2%, 93%);
+$gray-medium: hsl($light-sky-base, 15%, 35%);
+$gray-dark: hsl($light-sky-base, 15%, 30%);
+
+/* typography */
+$heading-font: "Montserrat", sans-serif;
+$heading-weight: 700;
+$heading-color: $turquoise-strong;
+$heading-color-small: $light-sky-dark;
+
+$heading-xl: 2.5rem;
+$heading-l: 2rem;
+$heading-m: 1.5rem;
+$heading-s: 1.25rem;
+
+$base-font: "Raleway", sans-serif;
+$body-copy-color: $light-sky-dark;
+
+@mixin shadow {
+  box-shadow: 0px 15px 15px hsl($light-sky-base, 15%, 70%, 0.3);
+}
+
+@mixin gradient($opacity) {
+  background: linear-gradient(
+    to bottom right,
+    hsla($light-sky-base, 53%, 85%, $opacity),
+    hsla($turquoise-base, 43%, 80%, $opacity),
+    hsla($aquamarine-base, 34%, 80%, $opacity)
+  );
+}
+
+/* Overriding Bootstrap Defaults */
+
+$primary: $aquamarine-medium;
+$body-bg: $turquoise-super-light;
+$body-color: $body-copy-color;
+$headings-font-family: $heading-font;
+$font-family-base: $base-font;
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 900px,
+  // xl: 900px,
+);
+
+///////////////////////////////
+
+@import "~bootstrap/scss/bootstrap";

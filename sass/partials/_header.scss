@@ -1,0 +1,16 @@
+header {
+  .nav-link {
+    font-family: $headings-font-family;
+    font-weight: 500;
+    color: $heading-color;
+  }
+
+  .nav-link.active {
+    border-bottom: $border-style;
+  }
+
+  .navbar-light .navbar-toggler {
+    color: $primary;
+    border: none;
+  }
+}

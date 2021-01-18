@@ -1,0 +1,30 @@
+.about {
+  .row {
+    @media (max-width: 767px) {
+      flex-direction: column;
+    }
+  }
+
+  .embed-responsive {
+    @media (max-width: 767px) {
+      width: 60%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  .gradient {
+    @include gradient(1);
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .portrait {
+    height: 90%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+}

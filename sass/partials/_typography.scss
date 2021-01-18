@@ -1,0 +1,44 @@
+h1,
+h2,
+h3,
+h4,
+h5 {
+  color: $heading-color;
+  margin-bottom: 16px;
+  font-weight: $heading-weight;
+}
+
+$border-style: 3px solid $primary;
+
+h1 {
+  font-size: $heading-xl;
+  padding-left: 16px;
+  border-left: $border-style;
+}
+
+#index h1 {
+  padding-left: 0;
+  border: none;
+}
+
+h2 {
+  font-size: $heading-l;
+  padding-left: 16px;
+  border-left: $border-style;
+}
+
+h3 {
+  font-size: $heading-m;
+  padding-left: 16px;
+  border-left: $border-style;
+}
+
+h4 {
+  font-size: $heading-s;
+  color: $heading-color-small;
+}
+
+p {
+  max-width: 75ch;
+  line-height: 1.6rem;
+}

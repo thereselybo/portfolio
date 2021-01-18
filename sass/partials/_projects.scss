@@ -1,0 +1,28 @@
+.projects {
+  .card-vertical {
+    .card-img-top {
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+    }
+  }
+
+  .card-horizontal {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+    .card-body {
+      height: 100%;
+    }
+
+    .img-container {
+      min-height: 300px;
+    }
+
+    .card-img {
+      border-radius: 0 10px 10px 0;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}
