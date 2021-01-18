@@ -1,3 +1,5 @@
+$border-style: 3px solid $primary;
+
 button,
 .btn {
   padding: 0.8rem 2rem;
@@ -48,7 +50,8 @@ p a {
 
 a:hover,
 a:focus {
-  color: $turquoise-dark;
-  border-color: $turquoise-dark;
+  // color: $turquoise-dark;
+  // border-color: $turquoise-dark;
+  border-bottom: $border-style;
   transition: ease-in 0.15s;
 }

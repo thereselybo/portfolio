@@ -1,7 +1,10 @@
 import Head from "next/head";
 import Link from "next/link";
+
 import Layout, { siteTitle } from "../components/Layout";
 import About from "../components/About";
+import Techs from "../components/Techs";
+
 import fs from "fs";
 import matter from "gray-matter";
 import { Container, Row, Col, Card, Button } from "react-bootstrap";
@@ -14,6 +17,7 @@ export default function Home({ posts }) {
       </Head>
       <div id="index">
         <About />
+        <Techs />
         <Container>
           <h2>Blog posts</h2>
           <Row className="mb-5">
