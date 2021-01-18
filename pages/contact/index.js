@@ -21,7 +21,7 @@ function index() {
             <ContactForm />
           </Col>
         </Row>
-        <Row className="icons">
+        {/* <Row className="icons">
           <Col xs={4}>
             <Link href="mailto:therese@lybo.dev">
               <a>
@@ -52,7 +52,7 @@ function index() {
               </a>
             </Link>
           </Col>
-        </Row>
+        </Row> */}
       </Container>
     </Layout>
   );
