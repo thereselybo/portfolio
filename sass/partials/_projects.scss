@@ -25,4 +25,17 @@
       object-fit: cover;
     }
   }
+
+  .icon-wrapper {
+    height: 3.5rem;
+    width: 3.5rem;
+    line-height: 3.5rem;
+    background: $aquamarine-light;
+    border-radius: 5px;
+  }
+
+  .fontAwesomeIcon {
+    width: 2.5rem;
+    color: $light-sky-dark;
+  }
 }

@@ -3,21 +3,26 @@ import Head from "next/head";
 import Link from "next/link";
 import Layout from "../../components/Layout";
 import { Container, Card, Col, Row, Button } from "react-bootstrap";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faSearchPlus,
+  faCode,
+  faExternalLinkAlt,
+} from "@fortawesome/free-solid-svg-icons";
 
 const baseUrl = "https://api.github.com/users/thereselybo/repos?type=owner";
 
 async function getRepos() {
-  try{
+  try {
     const response = await fetch(baseUrl);
     const json = await response.json();
     console.log(json);
-   }
-   catch(error) {
+  } catch (error) {
     console.log(error);
   }
 }
 
-getRepos()
+getRepos();
 
 export default function Projects() {
   return (
@@ -27,6 +32,8 @@ export default function Projects() {
       </Head>
       <Container className="projects">
         <h1>Projects</h1>
+
+        {/* MOBILE DISPLAY */}
         <Card className="card-vertical mb-5 d-block d-md-none">
           <Card.Img variant="top" src="/images/shadowball-desktop.jpg" />
           <Card.Body>
@@ -39,14 +46,49 @@ export default function Projects() {
               with a microsite which will contribute to raise awareness about
               space program activity.
             </Card.Text>
-            <Link href="https://lybo.dev/ixd/ca-v2/">
+            <Row className="text-center justify-content-center">
+              {/* <Col className="text-center"> */}
+              <Link href="#">
+                <a className="mx-4">
+                  <div className="icon-wrapper">
+                    <FontAwesomeIcon
+                      icon={faSearchPlus}
+                      className="fontAwesomeIcon"
+                    />
+                  </div>
+                </a>
+              </Link>
+              <Link href="https://github.com/thereselybo/shadowball">
+                <a className="mx-4">
+                  <div className="icon-wrapper">
+                    <FontAwesomeIcon
+                      icon={faCode}
+                      className="fontAwesomeIcon p2"
+                    />
+                  </div>
+                </a>
+              </Link>
+              <Link href="http://lybo.dev/ixd/ca-v2">
+                <a className="mx-4">
+                  <div className="icon-wrapper">
+                    <FontAwesomeIcon
+                      icon={faExternalLinkAlt}
+                      className="fontAwesomeIcon"
+                    />
+                  </div>
+                </a>
+              </Link>
+              {/* </Col> */}
+            </Row>
+            {/* <Link href="https://lybo.dev/ixd/ca-v2/">
               <Button variant="primary" className="reg-btn">
-                Se live side
+              Se live side
               </Button>
-            </Link>
+            </Link> */}
           </Card.Body>
         </Card>
 
+        {/* DESKTOP DISPLAY */}
         <Card className="card-horizontal d-none d-md-block">
           <Row>
             <Col className="pr-0">
