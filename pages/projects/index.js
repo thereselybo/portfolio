@@ -3,12 +3,7 @@ import Head from "next/head";
 import Link from "next/link";
 import Layout from "../../components/Layout";
 import { Container, Card, Col, Row, Button } from "react-bootstrap";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faSearchPlus,
-  faCode,
-  faExternalLinkAlt,
-} from "@fortawesome/free-solid-svg-icons";
+import LinkIcons from "./LinkIcons";
 
 const baseUrl = "https://api.github.com/users/thereselybo/repos?type=owner";
 
@@ -46,40 +41,7 @@ export default function Projects() {
               with a microsite which will contribute to raise awareness about
               space program activity.
             </Card.Text>
-            <Row className="text-center justify-content-center">
-              {/* <Col className="text-center"> */}
-              <Link href="#">
-                <a className="mx-4">
-                  <div className="icon-wrapper">
-                    <FontAwesomeIcon
-                      icon={faSearchPlus}
-                      className="fontAwesomeIcon"
-                    />
-                  </div>
-                </a>
-              </Link>
-              <Link href="https://github.com/thereselybo/shadowball">
-                <a className="mx-4">
-                  <div className="icon-wrapper">
-                    <FontAwesomeIcon
-                      icon={faCode}
-                      className="fontAwesomeIcon p2"
-                    />
-                  </div>
-                </a>
-              </Link>
-              <Link href="http://lybo.dev/ixd/ca-v2">
-                <a className="mx-4">
-                  <div className="icon-wrapper">
-                    <FontAwesomeIcon
-                      icon={faExternalLinkAlt}
-                      className="fontAwesomeIcon"
-                    />
-                  </div>
-                </a>
-              </Link>
-              {/* </Col> */}
-            </Row>
+            <LinkIcons />
             {/* <Link href="https://lybo.dev/ixd/ca-v2/">
               <Button variant="primary" className="reg-btn">
               Se live side
@@ -109,8 +71,11 @@ export default function Projects() {
                 </Link>
               </Card.Body>
             </Col>
-            <Col className="pl-0 img-container">
+            <Col className="pl-0 img-container position-relative">
               <Card.Img src="/images/shadowball-desktop.jpg" />
+              <div className="project-hover">
+                <LinkIcons />
+              </div>
             </Col>
           </Row>
         </Card>
