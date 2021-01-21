@@ -27,6 +27,7 @@
 
     .project-hover {
       opacity: 0;
+      display: none;
       width: calc(100% - 15px);
       height: 100%;
       position: absolute;
@@ -67,7 +68,13 @@
     width: 3.5rem;
     line-height: 3.5rem;
     background: $aquamarine-light;
+    transition: ease-in 0.15s;
     border-radius: 5px;
+    &:hover,
+    &:focus {
+      background: $primary;
+      transition: ease-in 0.15s;
+    }
   }
 
   .fontAwesomeIcon {

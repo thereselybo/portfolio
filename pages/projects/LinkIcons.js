@@ -10,7 +10,7 @@ import {
 
 function LinkIcons(props) {
   return (
-    <Row className="text-center justify-content-center link-icons">
+    <Row className="text-center justify-content-center link-icons my-4">
       {/* <Col className="text-center"> */}
       <Link href={props.case_study}>
         <a className="mx-4">

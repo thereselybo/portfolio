@@ -5,7 +5,7 @@ import LinkIcons from "./LinkIcons";
 
 function Project(props) {
   return (
-    <div>
+    <div className="mb-5">
       {/* MOBILE DISPLAY */}
       <Card className="card-vertical mb-5 d-block d-md-none">
         <Card.Img variant="top" src={props.image} alt="Project image" />
