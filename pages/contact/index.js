@@ -4,9 +4,7 @@ import Head from "next/head";
 import Layout from "../../components/Layout";
 import ContactForm from "./ContactForm";
 import { Container, Row, Col } from "react-bootstrap";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGithubSquare, faLinkedin } from "@fortawesome/free-brands-svg-icons";
-import { faEnvelopeSquare } from "@fortawesome/free-solid-svg-icons";
+import Fade from "react-reveal/Fade";
 
 function index() {
   return (
@@ -15,12 +13,16 @@ function index() {
         <title>Contact</title>
       </Head>
       <Container className="contact">
-        <h1>Contact</h1>
-        <Row>
-          <Col>
-            <ContactForm />
-          </Col>
-        </Row>
+        <Fade bottom>
+          <h1>Contact</h1>
+        </Fade>
+        <Fade bottom>
+          <Row>
+            <Col>
+              <ContactForm />
+            </Col>
+          </Row>
+        </Fade>
         {/* <Row className="icons">
           <Col xs={4}>
             <Link href="mailto:therese@lybo.dev">

@@ -6,6 +6,7 @@ import { Container, Card, Col, Row, Button } from "react-bootstrap";
 // import LinkIcons from "./LinkIcons";
 import projectHover from "./projectHover";
 import Project from "./Project";
+import Fade from "react-reveal/Fade";
 
 const baseUrl = "https://api.github.com/users/thereselybo/repos?type=owner";
 
@@ -28,7 +29,9 @@ export default function Projects() {
         <title>Projects</title>
       </Head>
       <Container className="projects">
-        <h1>Projects</h1>
+        <Fade bottom>
+          <h1>Projects</h1>
+        </Fade>
         <Project
           title="SpaceX"
           techs="HTML, CSS, JavaScript"
