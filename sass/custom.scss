@@ -19,7 +19,8 @@ $light-sky-gray: hsl($light-sky-base, 20%, 55%);
 
 /* base color 3 - aquamarine */
 $aquamarine-base: 146;
-$aquamarine-light: hsl($aquamarine-base, 34%, 80%);
+// $aquamarine-light: hsl($aquamarine-base, 34%, 80%);
+$aquamarine-light: hsl($aquamarine-base, 40%, 80%);
 $aquamarine-medium: hsl($aquamarine-base, 42%, 64%);
 $aquamarine-strong: hsl($aquamarine-base, 40%, 40%);
 $aquamarine-medium-dark: hsl($aquamarine-base, 40%, 37%);

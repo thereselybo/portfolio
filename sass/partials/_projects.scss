@@ -27,7 +27,6 @@
 
     .project-hover {
       opacity: 0;
-      display: none;
       width: calc(100% - 15px);
       height: 100%;
       position: absolute;
@@ -35,6 +34,12 @@
       top: 50%;
       border-radius: 0 10px 10px 0;
       background: hsla($light-sky-base, 20%, 55%, 60%);
+      transition: ease-in 1s;
+    }
+
+    .transition-opacity {
+      transition: ease-in 1s;
+      opacity: 1;
     }
 
     .hover-indicator {

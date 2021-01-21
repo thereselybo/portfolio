@@ -1,9 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import Link from "next/link";
 import { Card, Col, Row, Button } from "react-bootstrap";
 import LinkIcons from "./LinkIcons";
 
 function Project(props) {
+  const [isVisible, setIsVisible] = useState(false);
+
   return (
     <div className="mb-5">
       {/* MOBILE DISPLAY */}
@@ -18,39 +20,39 @@ function Project(props) {
             github_repo={props.github_repo}
             live_project={props.live_project}
           />
-          {/* <Link href="https://lybo.dev/ixd/ca-v2/">
-              <Button variant="primary" className="reg-btn">
-              Se live side
-              </Button>
-            </Link> */}
         </Card.Body>
       </Card>
 
       {/* DESKTOP DISPLAY */}
-      <Card className="card-horizontal d-none d-md-block">
+      <Card
+        className="card-horizontal d-none d-md-block"
+        onMouseEnter={() => setIsVisible(true)}
+        onMouseLeave={() => setIsVisible(false)}
+      >
         <Row>
           <Col className="pr-0">
             <Card.Body className="p-4 d-flex flex-column">
               <Card.Title>{props.title}</Card.Title>
               <Card.Subtitle>{props.techs}</Card.Subtitle>
               <Card.Text className="mt-3">{props.intro}</Card.Text>
-              {/* <Link href="https://lybo.dev/ixd/ca-v2/">
-                <Button className="mt-auto reg-btn" variant="primary">
-                  Se live side
-                </Button>
-              </Link> */}
             </Card.Body>
           </Col>
           <Col className="pl-0 img-container position-relative">
             <Card.Img src={props.image} />
             <div className="hover-indicator"></div>
-            <div className="project-hover">
-              <LinkIcons
-                case_study={props.case_study}
-                github_repo={props.github_repo}
-                live_project={props.live_project}
-              />
-            </div>
+            {isVisible && (
+              <div
+                className={`project-hover ${
+                  isVisible ? "transition-opacity" : ""
+                }`}
+              >
+                <LinkIcons
+                  case_study={props.case_study}
+                  github_repo={props.github_repo}
+                  live_project={props.live_project}
+                />
+              </div>
+            )}
           </Col>
         </Row>
       </Card>
