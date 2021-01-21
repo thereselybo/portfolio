@@ -16,9 +16,11 @@
     "fs": "0.0.1-security",
     "next": "9.5.3",
     "react": "16.13.1",
+    "react-animate-on-scroll": "^2.1.5",
     "react-bootstrap": "^1.4.0",
     "react-dom": "16.13.1",
     "react-markdown": "^5.0.2",
+    "react-reveal": "^1.2.2",
     "react-syntax-highlighter": "^15.3.0",
     "sass": "^1.27.1"
   },
