@@ -27,4 +27,6 @@ Starts a Next.js production server
 
 ## Resources
 
-- The blog section was created using [this tutorial](https://jfelix.info/blog/how-to-make-a-static-blog-with-next-js)
+- The blog section was created using [this article](https://jfelix.info/blog/how-to-make-a-static-blog-with-next-js)
+- The project component was made from [this article](https://www.framer.com/blog/posts/react-portfolio/)
+- The hover functionality on projects was made from [this article](https://upmostly.com/tutorials/react-onhover-event-handling-with-examples)
