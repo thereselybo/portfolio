@@ -1,23 +1,25 @@
 import React from "react";
 import Head from "next/head";
-import Link from "next/link";
+// import Link from "next/link";
 import Layout from "../../components/Layout";
 import { Container, Card, Col, Row, Button } from "react-bootstrap";
-import LinkIcons from "./LinkIcons";
+// import LinkIcons from "./LinkIcons";
+import projectHover from "./projectHover";
+import Project from "./Project";
 
 const baseUrl = "https://api.github.com/users/thereselybo/repos?type=owner";
 
-async function getRepos() {
-  try {
-    const response = await fetch(baseUrl);
-    const json = await response.json();
-    console.log(json);
-  } catch (error) {
-    console.log(error);
-  }
-}
+// async function getRepos() {
+//   try {
+//     const response = await fetch(baseUrl);
+//     const json = await response.json();
+//     console.log(json);
+//   } catch (error) {
+//     console.log(error);
+//   }
+// }
 
-getRepos();
+// getRepos();
 
 export default function Projects() {
   return (
@@ -27,59 +29,20 @@ export default function Projects() {
       </Head>
       <Container className="projects">
         <h1>Projects</h1>
-
-        {/* MOBILE DISPLAY */}
-        <Card className="card-vertical mb-5 d-block d-md-none">
-          <Card.Img variant="top" src="/images/shadowball-desktop.jpg" />
-          <Card.Body>
-            <Card.Title>ShadowBall</Card.Title>
-            <Card.Subtitle>
-              HTML | CSS | Bootstrap | JavaScript | IxD
-            </Card.Subtitle>
-            <Card.Text className="mt-3">
-              The objective of this project is to provide either NASA or SpaceX
-              with a microsite which will contribute to raise awareness about
-              space program activity.
-            </Card.Text>
-            <LinkIcons />
-            {/* <Link href="https://lybo.dev/ixd/ca-v2/">
-              <Button variant="primary" className="reg-btn">
-              Se live side
-              </Button>
-            </Link> */}
-          </Card.Body>
-        </Card>
-
-        {/* DESKTOP DISPLAY */}
-        <Card className="card-horizontal d-none d-md-block">
-          <Row>
-            <Col className="pr-0">
-              <Card.Body className="p-4 d-flex flex-column">
-                <Card.Title>ShadowBall</Card.Title>
-                <Card.Subtitle>
-                  HTML | CSS | Bootstrap | JavaScript | IxD
-                </Card.Subtitle>
-                <Card.Text className="mt-3">
-                  The goal of this assignment is to practice skills acquired
-                  from the Interaction Design course, as well as those from
-                  HTML, CSS and JavaScript.
-                </Card.Text>
-                <Link href="https://lybo.dev/ixd/ca-v2/">
-                  <Button className="mt-auto reg-btn" variant="primary">
-                    Se live side
-                  </Button>
-                </Link>
-              </Card.Body>
-            </Col>
-            <Col className="pl-0 img-container position-relative">
-              <Card.Img src="/images/shadowball-desktop.jpg" />
-              <div className="project-hover">
-                <LinkIcons />
-              </div>
-            </Col>
-          </Row>
-        </Card>
+        <Project
+          title="ShadowBall"
+          techs="HTML, CSS, Bootstrap, JavaScript, IxD"
+          intro="The objective of this project is to provide either NASA or SpaceX
+      with a microsite which will contribute to raise awareness about
+      space program activity."
+          case_study="#"
+          github_repo="https://github.com/thereselybo/shadowball"
+          live_project="http://lybo.dev/ixd/ca-v2"
+          image="/images/shadowball-desktop.jpg"
+        />
       </Container>
     </Layout>
   );
 }
+
+// projectHover();

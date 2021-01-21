@@ -8,25 +8,25 @@ import {
   faExternalLinkAlt,
 } from "@fortawesome/free-solid-svg-icons";
 
-function LinkIcons() {
+function LinkIcons(props) {
   return (
     <Row className="text-center justify-content-center link-icons">
       {/* <Col className="text-center"> */}
-      <Link href="#">
+      <Link href={props.case_study}>
         <a className="mx-4">
           <div className="icon-wrapper">
             <FontAwesomeIcon icon={faSearchPlus} className="fontAwesomeIcon" />
           </div>
         </a>
       </Link>
-      <Link href="https://github.com/thereselybo/shadowball">
+      <Link href={props.github_repo}>
         <a className="mx-4">
           <div className="icon-wrapper">
             <FontAwesomeIcon icon={faCode} className="fontAwesomeIcon p2" />
           </div>
         </a>
       </Link>
-      <Link href="http://lybo.dev/ixd/ca-v2">
+      <Link href={props.live_project}>
         <a className="mx-4">
           <div className="icon-wrapper">
             <FontAwesomeIcon
@@ -42,3 +42,29 @@ function LinkIcons() {
 }
 
 export default LinkIcons;
+
+// <Row className="text-center justify-content-center link-icons">
+//   {/* <Col className="text-center"> */}
+//   <Link href="#">
+//     <a className="mx-4">
+//       <div className="icon-wrapper">
+//         <FontAwesomeIcon icon={faSearchPlus} className="fontAwesomeIcon" />
+//       </div>
+//     </a>
+//   </Link>
+//   <Link href="https://github.com/thereselybo/shadowball">
+//     <a className="mx-4">
+//       <div className="icon-wrapper">
+//         <FontAwesomeIcon icon={faCode} className="fontAwesomeIcon p2" />
+//       </div>
+//     </a>
+//   </Link>
+//   <Link href="http://lybo.dev/ixd/ca-v2">
+//     <a className="mx-4">
+//       <div className="icon-wrapper">
+//         <FontAwesomeIcon icon={faExternalLinkAlt} className="fontAwesomeIcon" />
+//       </div>
+//     </a>
+//   </Link>
+//   {/* </Col> */}
+// </Row>;
