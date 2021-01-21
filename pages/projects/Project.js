@@ -45,7 +45,7 @@ function Project(props) {
               <div className="hover-indicator"></div>
               {isVisible && (
                 <div
-                  className={`project-hover my-auto ${
+                  className={`project-hover my-auto d-flex align-items-center ${
                     isVisible ? "transition-opacity" : ""
                   }`}
                 >
