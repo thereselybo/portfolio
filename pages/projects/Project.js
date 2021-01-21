@@ -38,11 +38,30 @@ function Project(props) {
             </Card.Body>
           </Col>
           <Col className="pl-0 img-container position-relative">
-            <Card.Img src={props.image} />
+            <div
+              className="project-image h-100"
+              style={{ backgroundImage: `url(${props.image})` }}
+            >
+              <div className="hover-indicator"></div>
+              {isVisible && (
+                <div
+                  className={`project-hover my-auto ${
+                    isVisible ? "transition-opacity" : ""
+                  }`}
+                >
+                  <LinkIcons
+                    case_study={props.case_study}
+                    github_repo={props.github_repo}
+                    live_project={props.live_project}
+                  />
+                </div>
+              )}
+            </div>
+            {/* <Card.Img src={props.image} />
             <div className="hover-indicator"></div>
             {isVisible && (
               <div
-                className={`project-hover ${
+                className={`project-hover my-auto ${
                   isVisible ? "transition-opacity" : ""
                 }`}
               >
@@ -52,7 +71,7 @@ function Project(props) {
                   live_project={props.live_project}
                 />
               </div>
-            )}
+            )} */}
           </Col>
         </Row>
       </Card>
