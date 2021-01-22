@@ -2,15 +2,6 @@ import React, { useEffect } from "react";
 import { Card, Form, Col, Row, Button } from "react-bootstrap";
 import kwesforms from "kwesforms";
 
-// The following commented out code is still a work in progress:
-// import ValidateForm from "./ValidateForm";
-
-// const contactForm = document.querySelector("#contactForm");
-// contactForm.onSubmit = (e) => {
-//     e.preventDefault();
-//     ValidateForm();
-//   }
-
 function ContactForm() {
   useEffect(() => {
     kwesforms.init();
@@ -22,6 +13,7 @@ function ContactForm() {
         id="contactForm"
         className="kwes-form"
         action="https://kwes.io/api/foreign/forms/ZhIrcoFBexr2xxYoHVt2"
+        // add following lines when/if upgrading kwes plan:
         // data-kw-success-message="Thank you for your message!"
         // data-kw-no-reload
       >
