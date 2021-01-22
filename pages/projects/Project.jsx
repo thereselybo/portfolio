@@ -6,6 +6,19 @@ import Fade from "react-reveal/Fade";
 
 function Project(props) {
   const [isVisible, setIsVisible] = useState(false);
+  // const techs = props.map((tech) => {
+  //   <span>{tech}</span>;
+  // });
+  // const techs = {["HTML", "CSS", "Javascript"]};
+  // techs.map((tech) => console.log(tech));
+  // console.log(techs);
+  const techs = React.Children.map(props.techs, (tech, index) => {
+    return (
+      <span>
+        {tech} {index < props.techs.length - 1 ? " | " : ""}
+      </span>
+    );
+  });
 
   return (
     <div className="mb-5">
@@ -15,7 +28,7 @@ function Project(props) {
           <Card.Img variant="top" src={props.image} alt="Project image" />
           <Card.Body>
             <Card.Title>{props.title}</Card.Title>
-            <Card.Subtitle>{props.techs}</Card.Subtitle>
+            <Card.Subtitle className="project-techs">{techs}</Card.Subtitle>
             <Card.Text className="mt-3">{props.intro}</Card.Text>
             <LinkIcons
               case_study={props.case_study}
@@ -37,7 +50,7 @@ function Project(props) {
             <Col className="pr-0">
               <Card.Body className="p-4 d-flex flex-column">
                 <Card.Title>{props.title}</Card.Title>
-                <Card.Subtitle>{props.techs}</Card.Subtitle>
+                <Card.Subtitle className="project-techs">{techs}</Card.Subtitle>
                 <Card.Text className="mt-3">{props.intro}</Card.Text>
               </Card.Body>
             </Col>

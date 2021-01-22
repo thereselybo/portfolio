@@ -5,7 +5,7 @@ import Layout from "../../components/Layout";
 import { Container, Card, Col, Row, Button } from "react-bootstrap";
 // import LinkIcons from "./LinkIcons";
 import projectHover from "./projectHover";
-import Project from "./Project";
+import Project from "./Project.jsx";
 import Fade from "react-reveal/Fade";
 
 const baseUrl = "https://api.github.com/users/thereselybo/repos?type=owner";
@@ -34,7 +34,7 @@ export default function Projects() {
         </Fade>
         <Project
           title="SpaceX"
-          techs="HTML, CSS, JavaScript"
+          techs={["HTML", "CSS", "Javascript"]}
           intro="The objective of this project is to provide either NASA or SpaceX with a microsite which will contribute to raise awareness about space program activity. The microsite is to be made up of at least four responsive pages, among other things consisting of a timeline to display launches, a JavaScript validated contact form and links to provide more information."
           case_study="#"
           github_repo="https://github.com/thereselybo/shadowball"
@@ -44,7 +44,7 @@ export default function Projects() {
 
         <Project
           title="ShadowBall"
-          techs="HTML, CSS, Bootstrap, JavaScript, IxD"
+          techs={["HTML", "CSS", "Bootstrap", "JavaScript", "IxD"]}
           intro="The object is to redesign and rebuild a website based on IxD principals combined with knowledge from previous courses The goal of this assignment is to practice skills acquired from the Interaction Design course, as well as those from HTML, CSS and JavaScript."
           case_study="#"
           github_repo="https://github.com/thereselybo/shadowball"
@@ -54,7 +54,7 @@ export default function Projects() {
 
         <Project
           title="Flower Power"
-          techs="HTML, CSS, JavaScript, CMS"
+          techs={["HTML", "CSS", "Javascript", "CMS"]}
           intro="The goal of this project is to use the WordPress REST API to create a website displaying a list of products. The products page should be a standalone site, written using HTML, CSS and JavaScript, and include a list of all the: product names, images and prices. Each product should have a call-to-action button to 'View More'."
           case_study="#"
           github_repo="https://github.com/thereselybo/flower-power"
@@ -64,7 +64,7 @@ export default function Projects() {
 
         <Project
           title="Community Science Museum"
-          techs="HTML, CSS, JavaScript"
+          techs={["HTML", "CSS", "Javascript"]}
           intro="For this project the object is to present a responsive website consisting of at least 4-6 pages for a local interactive science museum. The website is to attract primary and middle school children as well as families with young children."
           case_study="#"
           github_repo="https://github.com/thereselybo/science-museum"
@@ -74,7 +74,7 @@ export default function Projects() {
 
         <Project
           title="Re-Cycle"
-          techs="HTML, CSS, JavaScript"
+          techs={["HTML", "CSS", "Javascript"]}
           intro="The goal is to build a responsive website for a company that offer eco-friendly, guided cycling tours of a town. It should have 4 pages: home page, about us, contact us, and the list of routes/tours."
           case_study="#"
           github_repo="https://github.com/thereselybo/re-cycle"
