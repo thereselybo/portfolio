@@ -1,5 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
+import Typewriter from "typewriter-effect";
 
 function About() {
   return (
@@ -20,7 +21,39 @@ function About() {
         </Col>
         <Col className="order-md-1">
           <h1>Hi, I'm Therese</h1>
-          <h3>Front-end development student</h3>
+          <h3>
+            <Typewriter
+              // onInit={(typewriter) => {
+              // typewriter
+              //   .typeString("Front-end development student")
+              //   .pauseFor(2500)
+              //   .deleteAll()
+              //   .typeString("Coffee addict")
+              //   .pauseFor(2500)
+              //   .deleteAll()
+              //   .typeString("Butterfingers")
+              //   .pauseFor(2500)
+              //   .deleteAll()
+              //   .typeString("Animal lover")
+              //   .pauseFor(2500)
+              //   .deleteAll()
+              //   .typeString("Foodie")
+              //   .pauseFor(2500)
+              //   .start();
+              // }}
+              options={{
+                strings: [
+                  "Front-end development student",
+                  "Coffee addict",
+                  "Butterfingered person",
+                  "Animal lover",
+                  "Foodie",
+                ],
+                autoStart: true,
+                loop: true,
+              }}
+            />
+          </h3>
           <p>
             I am a 26 years old student living at Kløfta, Norway. I'm studying
             Frontend Development at Noroff School of Technology and Digital

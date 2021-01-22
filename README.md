@@ -31,3 +31,4 @@ Starts a Next.js production server
 - The project component was made from [this article](https://www.framer.com/blog/posts/react-portfolio/)
 - The hover functionality on projects was made from [this article](https://upmostly.com/tutorials/react-onhover-event-handling-with-examples)
 - The contact form was built with [KwesForms](https://kwes.io/)
+- Typewriter effect from [TypewriterJS](https://github.com/tameemsafi/typewriterjs#readme)
