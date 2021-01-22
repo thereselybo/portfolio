@@ -8,6 +8,10 @@
   .form-control {
     border-radius: 10px;
     font-family: $base-font;
+
+    &[name="message"] {
+      height: 234px;
+    }
   }
 
   .input-narrow {

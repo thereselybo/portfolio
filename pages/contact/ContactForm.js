@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Card, Form, Col, Row, Button } from "react-bootstrap";
+import kwesforms from "kwesforms";
 
 // The following commented out code is still a work in progress:
 // import ValidateForm from "./ValidateForm";
@@ -11,42 +12,62 @@ import { Card, Form, Col, Row, Button } from "react-bootstrap";
 //   }
 
 function ContactForm() {
+  useEffect(() => {
+    kwesforms.init();
+  }, []);
 
   return (
     <Card className="p-5 mb-5">
       <Form
         id="contactForm"
+        className="kwes-form"
+        action="https://kwes.io/api/foreign/forms/ZhIrcoFBexr2xxYoHVt2"
+        // data-kw-success-message="Thank you for your message!"
+        // data-kw-no-reload
       >
         <Row>
           <Col xs={12} md={6}>
-            <Form.Group controlId="name">
-              <Form.Label>Name</Form.Label>
-              <Form.Control type="text" className="input-narrow" required />
-              <Form.Control.Feedback type="invalid" id="nameError">
-                Please enter your name
-              </Form.Control.Feedback>
+            <Form.Group>
+              <Form.Label htmlFor="name">Name</Form.Label>
+              <Form.Control
+                name="name"
+                type="text"
+                className="input-narrow"
+                data-kw-rules="required|min:2|max:100"
+              />
             </Form.Group>
-            <Form.Group controlId="email">
-              <Form.Label>Email address</Form.Label>
-              <Form.Control type="email" className="input-narrow" required />
-              <Form.Control.Feedback type="invalid" id="emailError">
-                Please enter your email address
-              </Form.Control.Feedback>
+            <Form.Group>
+              <Form.Label htmlFor="email">Email address</Form.Label>
+              <Form.Control
+                name="email"
+                type="email"
+                className="input-narrow"
+                data-kw-rules="required|email"
+              />
             </Form.Group>
             <Form.Group controlId="phone">
-              <Form.Label>Phone</Form.Label>
-              <Form.Control type="tel" className="input-narrow" />
+              <Form.Label htmlFor="phone">Phone</Form.Label>
+              <Form.Control
+                name="phone"
+                type="tel"
+                className="input-narrow"
+                data-kw-rules="numeric"
+              />
             </Form.Group>
           </Col>
           <Col xs={12} md={6}>
-            <Form.Group controlId="message">
-              <Form.Label>Message</Form.Label>
-              <Form.Control as="textarea" rows={9} required />
-              <Form.Control.Feedback type="invalid" id="messageError">
-                Please enter your message
-              </Form.Control.Feedback>
+            <Form.Group>
+              <Form.Label htmlFor="message">Message</Form.Label>
+              <Form.Control
+                name="message"
+                as="textarea"
+                rows={9}
+                data-kw-rules="required|min:5|max:500"
+              />
             </Form.Group>
-            <Button className="mt-2" type="submit">Send message</Button>
+            <Button className="mt-2" type="submit">
+              Send message
+            </Button>
           </Col>
         </Row>
       </Form>

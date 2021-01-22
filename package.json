@@ -14,6 +14,7 @@
     "@fortawesome/react-fontawesome": "^0.1.12",
     "bootstrap": "^4.5.3",
     "fs": "0.0.1-security",
+    "kwesforms": "^2.0.6",
     "next": "9.5.3",
     "react": "16.13.1",
     "react-animate-on-scroll": "^2.1.5",
