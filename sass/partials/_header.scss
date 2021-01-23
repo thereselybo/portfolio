@@ -17,4 +17,20 @@ header {
   .navbar-brand {
     border: none;
   }
+
+  a:after {
+    display: block;
+    content: "";
+    border-bottom: $border-style;
+    transform: scaleX(0);
+    transition: ease-in 0.15s;
+  }
+
+  a:hover:after,
+  a:focus:after {
+    // color: $turquoise-dark;
+    // border-color: $turquoise-dark;
+    transform: scaleX(1.25);
+    transition: ease-in 0.15s;
+  }
 }

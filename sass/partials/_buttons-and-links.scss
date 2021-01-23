@@ -16,7 +16,7 @@ button,
 }
 
 button:hover {
-  filter: brightness(115%);
+  filter: brightness(105%);
   transition: filter ease-in 0.15s;
 }
 
@@ -44,14 +44,6 @@ a {
   text-decoration: none;
   transition: ease-in 0.15s;
 }
-p a {
-  border-bottom: 1px solid $turquoise-strong;
-}
-
-a:hover,
-a:focus {
-  // color: $turquoise-dark;
-  // border-color: $turquoise-dark;
-  border-bottom: $border-style;
-  transition: ease-in 0.15s;
-}
+// p a {
+//   border-bottom: 1px solid $turquoise-strong;
+// }
