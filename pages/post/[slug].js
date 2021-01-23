@@ -16,7 +16,7 @@ export default function Post({ content, frontmatter }) {
     <Layout>
       <article>
         <Container className="blog">
-          <Card className="p-3 mb-5">
+          <Card className="p-4">
             <ReactMarkdown
               escapeHtml={false}
               source={content}

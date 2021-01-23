@@ -6,12 +6,6 @@ import Fade from "react-reveal/Fade";
 
 function Project(props) {
   const [isVisible, setIsVisible] = useState(false);
-  // const techs = props.map((tech) => {
-  //   <span>{tech}</span>;
-  // });
-  // const techs = {["HTML", "CSS", "Javascript"]};
-  // techs.map((tech) => console.log(tech));
-  // console.log(techs);
   const techs = React.Children.map(props.techs, (tech, index) => {
     return (
       <span>
@@ -21,7 +15,7 @@ function Project(props) {
   });
 
   return (
-    <div className="mb-5">
+    <div className="project">
       {/* MOBILE DISPLAY */}
       <Fade bottom>
         <Card className="card-vertical mb-5 d-block d-md-none">

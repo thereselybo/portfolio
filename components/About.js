@@ -20,7 +20,7 @@ function About() {
           </div>
         </Col>
         <Col className="order-md-1">
-          <h1>Hi, I'm Therese</h1>
+          <h1 className="mb-2">Hi, I'm Therese</h1>
           <h3>
             <Typewriter
               // onInit={(typewriter) => {

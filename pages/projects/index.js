@@ -1,26 +1,9 @@
 import React from "react";
 import Head from "next/head";
-// import Link from "next/link";
 import Layout from "../../components/Layout";
-import { Container, Card, Col, Row, Button } from "react-bootstrap";
-// import LinkIcons from "./LinkIcons";
-import projectHover from "./projectHover";
-import Project from "./Project.jsx";
+import { Container } from "react-bootstrap";
+import Project from "./Project.js";
 import Fade from "react-reveal/Fade";
-
-const baseUrl = "https://api.github.com/users/thereselybo/repos?type=owner";
-
-// async function getRepos() {
-//   try {
-//     const response = await fetch(baseUrl);
-//     const json = await response.json();
-//     console.log(json);
-//   } catch (error) {
-//     console.log(error);
-//   }
-// }
-
-// getRepos();
 
 export default function Projects() {
   return (

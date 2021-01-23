@@ -26,7 +26,7 @@ export default function Home({ posts }) {
         <Fade bottom>
           <Container>
             <h2>Blog posts</h2>
-            <Row className="mb-5">
+            <Row className="mb-5 blog-posts">
               {posts.map(
                 ({ frontmatter: { title, description, date }, slug }) => (
                   <Col xs={12} md={4} key={title}>

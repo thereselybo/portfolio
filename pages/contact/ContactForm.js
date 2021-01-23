@@ -37,7 +37,7 @@ function ContactForm() {
                 data-kw-rules="required|email"
               />
             </Form.Group>
-            <Form.Group controlId="phone">
+            <Form.Group>
               <Form.Label htmlFor="phone">Phone</Form.Label>
               <Form.Control
                 name="phone"
