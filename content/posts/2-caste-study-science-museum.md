@@ -1,10 +1,10 @@
 ---
-title: Case study - Semester Project 1
+title: Case study - Community Science Museum
 description: The process and stages of creating a mobile responsive website for the fictional "Community Science Museum"
 date: 2021-01-18
 ---
 
-# Case study - Semester Project 1
+# Case study - Community Science Museum
 
 ## Introduction
 
@@ -37,9 +37,6 @@ Here are a few of my findings during my analysis of the assignment:
 - The target audience is school children (age 7-15) and families with young children
 - The desired product is an informative and appealing website, encouraging viewers to come visit the museum
 - Should be responsive
-
-From this I moved on to the actual project planning and making the Gantt chart.
-More on this can be found in the schedule document.
 
 I continued to reflect a bit on how to hit the target audience, what to include, what message I wanted to convey and so forth, before moving on to doing research on the competition.
 

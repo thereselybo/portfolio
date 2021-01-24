@@ -19,7 +19,7 @@ export default function Projects() {
           title="SpaceX"
           techs={["HTML", "CSS", "Javascript"]}
           intro="The objective of this project is to provide either NASA or SpaceX with a microsite which will contribute to raise awareness about space program activity. The microsite is to be made up of at least four responsive pages, among other things consisting of a timeline to display launches, a JavaScript validated contact form and links to provide more information."
-          case_study="#"
+          case_study="/post/3-caste-study-spacex"
           github_repo="https://github.com/thereselybo/shadowball"
           live_project="http://lybo.dev/ixd/ca-v2"
           image="/images/spacex-screenshot.jpg"
@@ -49,7 +49,7 @@ export default function Projects() {
           title="Community Science Museum"
           techs={["HTML", "CSS", "Javascript"]}
           intro="For this project the object is to present a responsive website consisting of at least 4-6 pages for a local interactive science museum. The website is to attract primary and middle school children as well as families with young children."
-          case_study="#"
+          case_study="/post/2-caste-study-science-museum"
           github_repo="https://github.com/thereselybo/science-museum"
           live_project="https://lybo.dev/semproj1-v2/"
           image="/images/science-museum-desktop.jpg"

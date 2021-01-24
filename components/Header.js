@@ -4,9 +4,9 @@ import Fade from "react-reveal/Fade";
 
 function Header() {
   return (
-    <Navbar expand="md" className="my-3">
-      <Container>
-        <Fade bottom>
+    <Fade bottom>
+      <Navbar expand="md" className="my-3">
+        <Container>
           <Navbar.Brand href="/">
             <img src="/images/logo.png" alt="Logo" width="120px" />
           </Navbar.Brand>
@@ -22,9 +22,9 @@ function Header() {
               Contact
             </Nav.Link>
           </Navbar.Collapse>
-        </Fade>
-      </Container>
-    </Navbar>
+        </Container>
+      </Navbar>
+    </Fade>
   );
 }
 
