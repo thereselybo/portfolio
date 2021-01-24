@@ -11,13 +11,13 @@ import {
 function LinkIcons(props) {
   return (
     <Row className="text-center justify-content-center link-icons my-4 mx-auto">
-      <Link href={props.case_study}>
+      {/* <Link href={props.case_study}>
         <a className="mx-4">
           <div className="icon-wrapper">
             <FontAwesomeIcon icon={faSearchPlus} className="fontAwesomeIcon" />
           </div>
         </a>
-      </Link>
+      </Link> */}
       <Link href={props.github_repo}>
         <a className="mx-4">
           <div className="icon-wrapper">
