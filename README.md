@@ -46,4 +46,5 @@ Starts a Next.js production server
 - [ ] Opacity transition when hovering over projects
 - [ ] Add API key restrictions to Google maps API
 - [ ] Router with active nav items
-- [ ] Share project
+- [ ] Share functionality
+- [ ] Deploy
