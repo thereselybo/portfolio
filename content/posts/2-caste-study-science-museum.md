@@ -61,10 +61,6 @@ For this assignment I decided to experiment with Adobe XD as I was quite new to 
 ![Wireframe](/blogpost-img/wireframe.png)
 ![Mobile prototype](/blogpost-img/mobile-prototype.png)
 
-<!-- <img src="/blogpost-img/wireframes.png">
-<img src="/blogpost-img/prototype-pt1.png">
-<img src="/blogpost-img/prototype-pt2.png"> -->
-
 ## Conclusion
 
 I am really a figure-it-out-as-I-go kind of gal, and it did feel a bit unusual to plan every step down to the tee. However I found making the Gantt chart very helpful for the progress of the project. I am very happy with how it turned out in terms of distribution of tasks and time, if we disregard the fact that I slightly underestimated the complexity of certain choices. I actually found myself finishing up the HTML in just one day, giving me a couple more days of experimenting with different solutions with CSS such as the hamburger menu and a pop-up contact form (an idea I eventually discarded). However, parts of my design turned out to be a bit more vast than I predicted, and so I ended up spending a lot of time here. That being said, this part of the project turned out to be the one I enjoyed the most, as I also learned a lot from it.

@@ -23,24 +23,6 @@ function About() {
           <h1 className="mb-2">Hi, I'm Therese</h1>
           <h3>
             <Typewriter
-              // onInit={(typewriter) => {
-              // typewriter
-              //   .typeString("Front-end development student")
-              //   .pauseFor(2500)
-              //   .deleteAll()
-              //   .typeString("Coffee addict")
-              //   .pauseFor(2500)
-              //   .deleteAll()
-              //   .typeString("Butterfingers")
-              //   .pauseFor(2500)
-              //   .deleteAll()
-              //   .typeString("Animal lover")
-              //   .pauseFor(2500)
-              //   .deleteAll()
-              //   .typeString("Foodie")
-              //   .pauseFor(2500)
-              //   .start();
-              // }}
               options={{
                 strings: [
                   "Front-end development student",

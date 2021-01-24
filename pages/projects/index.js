@@ -68,5 +68,3 @@ export default function Projects() {
     </Layout>
   );
 }
-
-// projectHover();

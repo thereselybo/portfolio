@@ -23,38 +23,6 @@ function index() {
             </Col>
           </Row>
         </Fade>
-        {/* <Row className="icons">
-          <Col xs={4}>
-            <Link href="mailto:therese@lybo.dev">
-              <a>
-                <FontAwesomeIcon
-                  icon={faEnvelopeSquare}
-                  className="fontAwesomeIcon"
-                />
-              </a>
-            </Link>
-          </Col>
-          <Col xs={4}>
-            <Link href="https://github.com/thereselybo">
-              <a>
-                <FontAwesomeIcon
-                  icon={faGithubSquare}
-                  className="fontAwesomeIcon"
-                />
-              </a>
-            </Link>
-          </Col>
-          <Col xs={4}>
-            <Link href="https://www.linkedin.com/in/thereselybo/">
-              <a>
-                <FontAwesomeIcon
-                  icon={faLinkedin}
-                  className="fontAwesomeIcon"
-                />
-              </a>
-            </Link>
-          </Col>
-        </Row> */}
       </Container>
     </Layout>
   );

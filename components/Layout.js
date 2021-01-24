@@ -2,7 +2,6 @@ import Head from "next/head";
 import Header from "./Header";
 import Footer from "./Footer";
 
-const name = "Therese";
 export const siteTitle = "Therese Lybo - Front-end Development Student";
 
 export default function Layout({ children }) {

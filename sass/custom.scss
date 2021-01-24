@@ -46,7 +46,6 @@ $base-font: "Raleway", sans-serif;
 $body-copy-color: $light-sky-dark;
 
 @mixin shadow {
-  // box-shadow: 0px 15px 15px hsl($light-sky-base, 15%, 70%, 0.3);
   box-shadow: 0px 15px 15px hsl($light-sky-base, 15%, 70%, 0.1);
 }
 
@@ -71,7 +70,6 @@ $container-max-widths: (
   sm: 540px,
   md: 720px,
   lg: 900px,
-  // xl: 900px,
 );
 
 ///////////////////////////////

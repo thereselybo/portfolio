@@ -13,8 +13,6 @@ header {
 
     &:hover:after,
     &:focus:after {
-      // color: $turquoise-dark;
-      // border-color: $turquoise-dark;
       transform: scaleX(1.25);
       transition: ease-in 0.15s;
     }
