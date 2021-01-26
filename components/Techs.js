@@ -7,7 +7,7 @@ function Techs() {
       <h2>Teknologi og verktøy</h2>
       <Row className="text-center">
         <Col>
-          <Card className="mb-5">
+          <Card className="mb-5 p-3 px-md-5 py-md-4">
             <ul className="h5">
               <li>HTML5</li>
               <li>CSS3</li>
