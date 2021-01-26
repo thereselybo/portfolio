@@ -2,7 +2,7 @@ import React from "react";
 import Link from "next/link";
 import { useRouter } from "next/router";
 
-import { Container, Navbar, Nav } from "react-bootstrap";
+import { Container, Navbar } from "react-bootstrap";
 import Fade from "react-reveal/Fade";
 
 function Header() {
@@ -15,9 +15,6 @@ function Header() {
           <Link href="/" className="navbar-brand">
             <img src="/images/logo.png" alt="Logo" width="120px" />
           </Link>
-          {/* <Navbar.Brand href="/">
-            <img src="/images/logo.png" alt="Logo" width="120px" />
-          </Navbar.Brand> */}
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse className="justify-content-end">
             <Link href="/">
@@ -47,15 +44,6 @@ function Header() {
                 Contact
               </a>
             </Link>
-            {/* <Nav.Link className="px-0 px-md-3" href="/">
-              Home
-            </Nav.Link>
-            <Nav.Link className="px-0 px-md-3 mx-md-3" href="/projects">
-              Projects
-            </Nav.Link>
-            <Nav.Link className="px-0 px-md-3" href="/contact">
-              Contact
-            </Nav.Link> */}
           </Navbar.Collapse>
         </Container>
       </Navbar>
