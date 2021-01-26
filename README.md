@@ -49,3 +49,4 @@ Starts a Next.js production server
 - [ ] Opacity transition when hovering over projects
 - [ ] Add API key restrictions to Google maps API
 - [ ] Share functionality
+- [ ] Create 404 page

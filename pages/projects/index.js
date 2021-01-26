@@ -20,8 +20,8 @@ export default function Projects() {
           techs={["HTML", "CSS", "Javascript"]}
           intro="Oppgaven er å bygge en mikroside for SpaceX eller NASA for å øke bevissthet rundt aktivitet i verdensrommet. Mikrosiden skal bygges opp av fire mobilresponsive sider, og skal blant annet inneholde en tidslinje over rakettutskytninger, et JavaScript-validert kontaktskjema, og linker til ytterligere informasjon."
           case_study="/post/3-caste-study-spacex"
-          github_repo="https://github.com/thereselybo/shadowball"
-          live_project="http://lybo.dev/ixd/ca-v2"
+          github_repo="https://github.com/thereselybo/spacex"
+          live_project="https://lybo.dev/projex1"
           image="/images/spacex-screenshot.jpg"
         />
 
