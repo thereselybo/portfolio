@@ -27,7 +27,7 @@ function About() {
                 strings: [
                   "Front-end development student",
                   "Coffee addict",
-                  "Butterfingered person",
+                  "Digital hobby illustrator",
                   "Animal lover",
                   "Foodie",
                 ],
