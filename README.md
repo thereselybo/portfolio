@@ -33,6 +33,7 @@ Starts a Next.js production server
 - The contact form was built with [KwesForms](https://kwes.io/)
 - Typewriter effect from [TypewriterJS](https://github.com/tameemsafi/typewriterjs#readme)
 - Fade in animation from [React Reveal](https://www.react-reveal.com/)
+- Progress bar from [this article](https://levelup.gitconnected.com/improve-ux-of-your-next-js-app-in-3-minutes-with-page-loading-indicator-3a422113304d)
 
 ## To do
 
@@ -41,9 +42,10 @@ Starts a Next.js production server
 - [x] Build contact form
 - [x] Build and style projects
 - [x] Fade in animation
+- [x] Active state nav items
+- [x] Deploy
 - [ ] Create case study for all projects
 - [ ] Reformat sass color variables
 - [ ] Opacity transition when hovering over projects
 - [ ] Add API key restrictions to Google maps API
-- [ ] Router with active nav items
-- [ ] Share project
+- [ ] Share functionality
