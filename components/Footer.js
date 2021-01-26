@@ -21,7 +21,7 @@ function Footer() {
               </a>
             </Link>
             <Link href="https://github.com/thereselybo">
-              <a className="mx-1 mx-md-5">
+              <a className="mx-3 mx-md-5">
                 <FontAwesomeIcon
                   icon={faGithubSquare}
                   className="fontAwesomeIcon"
