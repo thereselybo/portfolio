@@ -20,8 +20,8 @@ export default function Projects() {
           techs={["HTML", "CSS", "Javascript"]}
           intro="The objective of this project is to provide either NASA or SpaceX with a microsite which will contribute to raise awareness about space program activity. The microsite is to be made up of at least four responsive pages, among other things consisting of a timeline to display launches, a JavaScript validated contact form and links to provide more information."
           case_study="/post/3-caste-study-spacex"
-          github_repo="https://github.com/thereselybo/shadowball"
-          live_project="http://lybo.dev/ixd/ca-v2"
+          github_repo="https://github.com/thereselybo/spacex"
+          live_project="https://lybo.dev/projex1"
           image="/images/spacex-screenshot.jpg"
         />
 
