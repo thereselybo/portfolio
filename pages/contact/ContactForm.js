@@ -20,7 +20,7 @@ function ContactForm() {
         <Row>
           <Col xs={12} md={6}>
             <Form.Group>
-              <Form.Label htmlFor="name">Name</Form.Label>
+              <Form.Label htmlFor="name">Navn</Form.Label>
               <Form.Control
                 name="name"
                 type="text"
@@ -29,7 +29,7 @@ function ContactForm() {
               />
             </Form.Group>
             <Form.Group>
-              <Form.Label htmlFor="email">Email address</Form.Label>
+              <Form.Label htmlFor="email">Mailadresse</Form.Label>
               <Form.Control
                 name="email"
                 type="email"
@@ -38,7 +38,7 @@ function ContactForm() {
               />
             </Form.Group>
             <Form.Group>
-              <Form.Label htmlFor="phone">Phone</Form.Label>
+              <Form.Label htmlFor="phone">Telefon</Form.Label>
               <Form.Control
                 name="phone"
                 type="tel"
@@ -49,7 +49,7 @@ function ContactForm() {
           </Col>
           <Col xs={12} md={6}>
             <Form.Group>
-              <Form.Label htmlFor="message">Message</Form.Label>
+              <Form.Label htmlFor="message">Melding</Form.Label>
               <Form.Control
                 name="message"
                 as="textarea"
@@ -58,7 +58,7 @@ function ContactForm() {
               />
             </Form.Group>
             <Button className="mt-2" type="submit">
-              Send message
+              Send melding
             </Button>
           </Col>
         </Row>

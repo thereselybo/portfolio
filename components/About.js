@@ -20,15 +20,15 @@ function About() {
           </div>
         </Col>
         <Col className="order-md-1">
-          <h1 className="mb-2">Hi, I'm Therese</h1>
+          <h1 className="mb-2">Hei, jeg er Therese</h1>
           <h3>
             <Typewriter
               options={{
                 strings: [
-                  "Front-end development student",
-                  "Coffee addict",
-                  "Digital hobby illustrator",
-                  "Animal lover",
+                  "Frontend-utviklinger under utvikling",
+                  "Kaffeavhengig",
+                  "Digital hobbyillustratør",
+                  "Dyreelsker",
                   "Foodie",
                 ],
                 autoStart: true,
@@ -37,15 +37,14 @@ function About() {
             />
           </h3>
           <p>
-            I am a 26 years old student living at Kløfta, Norway. I'm studying
-            Frontend Development at Noroff School of Technology and Digital
-            Media in Oslo, where I'm currently enjoying exploring both the
-            creative and technical sides of myself.
+            Jeg er en 26 år gammel student som bor på Kløfta. Jeg studerer
+            frontend-utvikling på Noroff School of Technology and Digital Media
+            i Oslo, hvor jeg stortrives med å få utforske og utvikle både
+            kreative og tekniske sider ved meg selv.
           </p>
           <p>
-            When I'm not in front of my computer, I can be found outdoors,
-            working my way through a bowl of pasta, immersed in a plant, or
-            petting any nearby dog.
+            Utenom studier og datatid, har jeg stor glede av å være utendørs,
+            drive med matlaging, utvikle grønne fingre, og klappe hunder.
           </p>
         </Col>
       </Row>

@@ -18,7 +18,11 @@ function Project(props) {
       {/* MOBILE DISPLAY */}
       <Fade bottom>
         <Card className="card-vertical mb-5 d-block d-md-none">
-          <Card.Img variant="top" src={props.image} alt="Project image" />
+          <Card.Img
+            variant="top"
+            src={props.image}
+            alt="Bilde fra prosjektet"
+          />
           <Card.Body>
             <Card.Title>{props.title}</Card.Title>
             <Card.Subtitle className="project-techs">{techs}</Card.Subtitle>

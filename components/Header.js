@@ -23,7 +23,7 @@ function Header() {
                   router.pathname == "/" || "" ? "active" : ""
                 }`}
               >
-                Home
+                Hjem
               </a>
             </Link>
             <Link href="/projects">
@@ -32,7 +32,7 @@ function Header() {
                   router.pathname == "/projects" ? "active" : ""
                 }`}
               >
-                Projects
+                Prosjekter
               </a>
             </Link>
             <Link href="/contact">
@@ -41,7 +41,7 @@ function Header() {
                   router.pathname == "/contact" ? "active" : ""
                 }`}
               >
-                Contact
+                Kontakt
               </a>
             </Link>
           </Navbar.Collapse>

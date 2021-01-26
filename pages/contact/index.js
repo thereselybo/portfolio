@@ -10,11 +10,11 @@ function index() {
   return (
     <Layout>
       <Head>
-        <title>Contact</title>
+        <title>Kontakt</title>
       </Head>
       <Container className="contact">
         <Fade bottom>
-          <h1>Contact</h1>
+          <h1>Kontakt</h1>
         </Fade>
         <Fade bottom>
           <Row>

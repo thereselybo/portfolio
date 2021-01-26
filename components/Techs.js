@@ -4,7 +4,7 @@ import { Container, Row, Col, Card } from "react-bootstrap";
 function Techs() {
   return (
     <Container className="techs">
-      <h2>Techs and Tools</h2>
+      <h2>Teknologi og verktøy</h2>
       <Row className="text-center">
         <Col>
           <Card className="mb-5">
@@ -16,7 +16,7 @@ function Techs() {
               <li>Bootstrap</li>
               <li>Tailwind</li>
               <li>IxD</li>
-              <li>Wordpress/WooCommerce</li>
+              <li>Wordpress / WooCommerce</li>
               <li>Adobe Photoshop</li>
               <li>Adobe Illustrator</li>
               <li>Adobe XD</li>
