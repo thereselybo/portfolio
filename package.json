@@ -16,6 +16,7 @@
     "fs": "0.0.1-security",
     "kwesforms": "^2.0.6",
     "next": "9.5.3",
+    "nprogress": "^0.2.0",
     "react": "16.13.1",
     "react-bootstrap": "^1.4.0",
     "react-dom": "16.13.1",
