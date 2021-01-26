@@ -21,7 +21,8 @@ header {
   .nav-link.active:after {
     display: block;
     content: "";
-    border-bottom: $border-style;
+    transform: scaleX(1.25);
+    // border-bottom: $border-style;
   }
 
   .navbar-light .navbar-toggler {
