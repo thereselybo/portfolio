@@ -12,8 +12,10 @@ function Header() {
     <Fade bottom>
       <Navbar expand="md" className="my-3">
         <Container>
-          <Link href="/" className="navbar-brand">
-            <img src="/images/logo.png" alt="Logo" width="120px" />
+          <Link href="/">
+            <a className="navbar-brand">
+              <img src="/images/logo.png" alt="Logo" width="120px" />
+            </a>
           </Link>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse className="justify-content-end">
