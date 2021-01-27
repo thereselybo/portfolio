@@ -25,7 +25,7 @@ function About() {
             <Typewriter
               options={{
                 strings: [
-                  "Frontend-utviklinger under utvikling",
+                  "Frontend-utvikler under utvikling",
                   "Kaffeavhengig",
                   "Digital hobbyillustratør",
                   "Dyreelsker",
