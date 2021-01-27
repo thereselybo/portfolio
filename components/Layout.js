@@ -1,4 +1,8 @@
 import Head from "next/head";
+
+import ReactGA from "react-ga";
+import auth from "./auth.ts"; // Sample authentication provider
+
 import Header from "./Header";
 import Footer from "./Footer";
 
@@ -22,6 +26,21 @@ export default function Layout({ children }) {
         <meta property="og:title" content={siteTitle} />
         <meta property="og:description" content={desc} />
         {/* REMEMBER TO ADD MORE META TAGS */}
+
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=UA-168222250-1"
+        ></script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){window.dataLayer.push(arguments)}
+        gtag("js", new Date());
+        gtag("config", "<UA-168222250-1>");
+    `,
+          }}
+        ></script>
       </Head>
       <header>
         <Header />
