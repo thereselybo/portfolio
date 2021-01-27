@@ -44,7 +44,8 @@ function About() {
           </p>
           <p>
             Utenom studier og datatid, har jeg stor glede av å være utendørs,
-            drive med matlaging, utvikle grønne fingre, og klappe hunder.
+            drive med matlaging, utvikle mine nogen lunde grønne fingre, og
+            klappe alle hunder jeg kommer over.
           </p>
         </Col>
       </Row>
