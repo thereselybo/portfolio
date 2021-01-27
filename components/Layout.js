@@ -13,7 +13,11 @@ export default function Layout({ children }) {
         <link rel="icon" href="/favicon.ico" />
         <meta name="og:title" content={siteTitle} />
         <meta name="description" content={desc} />
-        <meta property="og:image" content="https://lybo.dev/images/logo.svg" />
+        <meta
+          name="image"
+          property="og:image"
+          content="https://lybo.dev/images/profile-gradient.png"
+        />
         <meta property="og:url" content="https://lybo.dev/" />
         <meta property="og:title" content={siteTitle} />
         <meta property="og:description" content={desc} />
