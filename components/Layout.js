@@ -3,6 +3,8 @@ import Header from "./Header";
 import Footer from "./Footer";
 
 export const siteTitle = "Therese Lybo - Student frontend-utvikling";
+export const desc =
+  "Personlig nettside for Therese Lybo. Prosjekter, kontaktinformasjon og annet rart";
 
 export default function Layout({ children }) {
   return (
@@ -10,15 +12,11 @@ export default function Layout({ children }) {
       <Head>
         <link rel="icon" href="/favicon.ico" />
         <meta name="og:title" content={siteTitle} />
-        <meta
-          name="description"
-          content="Personalig nettside for Therese Lybo. Prosjekter, kontaktinformasjon og annet rart"
-        />
-        <meta
-          property="og:image"
-          content="https://lybo.dev/design2/ma3/images/profile.png"
-        />
+        <meta name="description" content={desc} />
+        <meta property="og:image" content="https://lybo.dev/images/logo.svg" />
         <meta property="og:url" content="https://lybo.dev/" />
+        <meta property="og:title" content={siteTitle} />
+        <meta property="og:description" content={desc} />
         {/* REMEMBER TO ADD MORE META TAGS */}
       </Head>
       <header>
