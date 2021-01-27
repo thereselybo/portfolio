@@ -1,8 +1,5 @@
 import Head from "next/head";
 
-import ReactGA from "react-ga";
-import auth from "./auth.ts"; // Sample authentication provider
-
 import Header from "./Header";
 import Footer from "./Footer";
 
