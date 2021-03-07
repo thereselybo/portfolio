@@ -16,6 +16,16 @@ export default function Projects() {
           <h1>Prosjekter</h1>
         </Fade>
         <Project
+          title="Trinkets"
+          techs={["HTML", "SCSS", "Javascript", "Strapi"]}
+          intro="Oppgaven er å bygge et e-commerce-prosjekt med en admin for å oppdatere og slette produkter, samt en frontend. Frontenden må være mobil-responsiv, og skal populeres fra et API bygget på egen hånd ved hjelp av et headless CMS. "
+          case_study="#"
+          github_repo="https://github.com/thereselybo/trinkets"
+          live_project="https://trinkets.lybo.dev/"
+          image="/images/trinkets-screens.jpg"
+        />
+
+        <Project
           title="SpaceX"
           techs={["HTML", "CSS", "Javascript"]}
           intro="Oppgaven er å bygge en mikroside for SpaceX eller NASA for å øke bevissthet rundt aktivitet i verdensrommet. Mikrosiden skal bygges opp av fire mobilresponsive sider, og skal blant annet inneholde en tidslinje over rakettutskytninger, et JavaScript-validert kontaktskjema, og linker til ytterligere informasjon."

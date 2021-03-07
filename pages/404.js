@@ -12,7 +12,7 @@ export default function FourOhFour() {
       <div id="error-page">
         <Container className="text-center">
           <Fade bottom>
-            <img src="./images/404.svg" alt="404 error" />
+            <img src="/images/404.svg" alt="404 error" />
           </Fade>
           <Fade bottom>
             <h1 className="my-2">Oisann, noe rart skjedde</h1>
