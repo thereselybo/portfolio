@@ -17,7 +17,7 @@ export default function Layout({ children }) {
         <meta
           name="image"
           property="og:image"
-          content="https://lybo.dev/images/projects"
+          content="https://lybo.dev/images/projects-screenshot.jpg"
         />
         <meta property="og:url" content="https://lybo.dev/" />
         <meta property="og:title" content={siteTitle} />
