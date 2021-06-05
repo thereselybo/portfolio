@@ -5,7 +5,7 @@ import { useRouter } from "next/router";
 import { Container, Navbar } from "react-bootstrap";
 import Fade from "react-reveal/Fade";
 
-function Header() {
+const Header = () => {
   const router = useRouter();
 
   return (
@@ -49,6 +49,6 @@ function Header() {
       </Navbar>
     </Fade>
   );
-}
+};
 
 export default Header;

@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { Card, Form, Col, Row, Button } from "react-bootstrap";
 import kwesforms from "kwesforms";
 
-function ContactForm() {
+const ContactForm = () => {
   useEffect(() => {
     kwesforms.init();
   }, []);
@@ -65,6 +65,6 @@ function ContactForm() {
       </Form>
     </Card>
   );
-}
+};
 
 export default ContactForm;

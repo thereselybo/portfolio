@@ -5,11 +5,11 @@ import Fade from "react-reveal/Fade";
 import DesktopCard from "./DesktopCard";
 import MobileCard from "./MobileCard";
 
-function Project(project) {
-  const { title, techs, intro, case_study, github_repo, live_project, image } =
-    project;
+const Project = (project) => {
+  // const { title, techs, intro, case_study, github_repo, live_project, image } =
+  //   project;
   // console.log(project);
-  const [isVisible, setIsVisible] = useState(false);
+  // const [isVisible, setIsVisible] = useState(false);
   // const techs = React.Children.map(project.techs, (tech, index) => {
   //   return (
   //     <span>
@@ -27,6 +27,6 @@ function Project(project) {
       <DesktopCard project={project} />
     </div>
   );
-}
+};
 
 export default Project;

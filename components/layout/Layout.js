@@ -4,7 +4,7 @@ import Footer from "./Footer";
 
 export const siteTitle = "Therese Lybo - Front-end Development Student";
 
-export default function Layout({ children }) {
+const Layout=({ children })=> {
   return (
     <div>
       <Head>
@@ -31,3 +31,5 @@ export default function Layout({ children }) {
     </div>
   );
 }
+
+export default Layout

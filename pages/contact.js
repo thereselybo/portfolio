@@ -6,7 +6,7 @@ import ContactForm from "../components/contact/ContactForm";
 import { Container, Row, Col } from "react-bootstrap";
 import Fade from "react-reveal/Fade";
 
-function index() {
+const Contact =() => {
   return (
     <Layout>
       <Head>
@@ -28,4 +28,4 @@ function index() {
   );
 }
 
-export default index;
+export default Contact;

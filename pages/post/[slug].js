@@ -11,7 +11,7 @@ const CodeBlock = ({ language, value }) => {
   return <SyntaxHighlighter language={language}>{value}</SyntaxHighlighter>;
 };
 
-export default function Post({ content }) {
+const Post = ({ content }) => {
   return (
     <Layout>
       <article>
@@ -27,9 +27,11 @@ export default function Post({ content }) {
       </article>
     </Layout>
   );
-}
+};
 
-export async function getStaticPaths() {
+export default Post;
+
+export const getStaticPaths = async () => {
   const files = fs.readdirSync("content/posts");
 
   const paths = files.map((filename) => ({
@@ -42,9 +44,9 @@ export async function getStaticPaths() {
     paths,
     fallback: false,
   };
-}
+};
 
-export async function getStaticProps({ params: { slug } }) {
+export const getStaticProps = async ({ params: { slug } }) => {
   const markdownWithMetadata = fs
     .readFileSync(path.join("content/posts", slug + ".md"))
     .toString();
@@ -66,4 +68,4 @@ export async function getStaticProps({ params: { slug } }) {
       frontmatter,
     },
   };
-}
+};

@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Row, Col, Card } from "react-bootstrap";
 
-function Techs() {
+const Techs = () => {
   return (
     <Container className="techs">
       <h2>Techs and Tools</h2>
@@ -26,6 +26,6 @@ function Techs() {
       </Row>
     </Container>
   );
-}
+};
 
 export default Techs;

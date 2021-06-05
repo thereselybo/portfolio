@@ -6,7 +6,7 @@ import { faGithubSquare, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelopeSquare } from "@fortawesome/free-solid-svg-icons";
 import Fade from "react-reveal/Fade";
 
-function Footer() {
+const Footer = () => {
   return (
     <Container>
       <Fade bottom>
@@ -41,6 +41,6 @@ function Footer() {
       </Fade>
     </Container>
   );
-}
+};
 
 export default Footer;

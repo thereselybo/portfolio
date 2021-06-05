@@ -8,7 +8,7 @@ import Techs from "../components/home/Techs";
 import Fade from "react-reveal/Fade";
 import BlogPosts from "../components/home/BlogPosts";
 
-export default function Home({ posts }) {
+const Home=({ posts }) =>{
   return (
     <Layout>
       <Head>
@@ -28,6 +28,8 @@ export default function Home({ posts }) {
     </Layout>
   );
 }
+
+export default Home
 
 export async function getStaticProps() {
   const files = fs.readdirSync(`${process.cwd()}/content/posts`);

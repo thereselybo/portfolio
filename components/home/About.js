@@ -2,7 +2,7 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Typewriter from "typewriter-effect";
 
-function About() {
+const About = () => {
   return (
     <Container className="about mb-5">
       <Row className="align-items-center">
@@ -51,6 +51,6 @@ function About() {
       </Row>
     </Container>
   );
-}
+};
 
 export default About;

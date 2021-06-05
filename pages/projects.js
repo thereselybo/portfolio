@@ -5,7 +5,7 @@ import { Container } from "react-bootstrap";
 import Project from "../components/projects/Project.js";
 import Fade from "react-reveal/Fade";
 
-export default function Projects() {
+const Projects = () => {
   return (
     <Layout>
       <Head>
@@ -67,4 +67,6 @@ export default function Projects() {
       </Container>
     </Layout>
   );
-}
+};
+
+export default Projects;
