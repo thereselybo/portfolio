@@ -8,7 +8,7 @@ import {
   faExternalLinkAlt,
 } from "@fortawesome/free-solid-svg-icons";
 
-const LinkIcons =(links) =>{
+const LinkIcons = (links) => {
   const { case_study, github_repo, live_project } = links;
 
   return (
@@ -48,6 +48,6 @@ const LinkIcons =(links) =>{
       )}
     </Row>
   );
-}
+};
 
 export default LinkIcons;

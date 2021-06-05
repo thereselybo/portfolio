@@ -34,11 +34,11 @@
       right: 15px;
       border-radius: 0 10px 10px 0;
       background: hsla($light-sky-base, 20%, 55%, 60%);
-      transition: ease-in 1s;
+      transition: ease-in 0.15s;
     }
 
     .transition-opacity {
-      transition: ease-in 1s;
+      transition: ease-in 0.15s;
       opacity: 1;
     }
 

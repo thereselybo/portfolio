@@ -40,6 +40,6 @@ Starts a Next.js production server
 - [x] Active state nav items
 - [x] Deploy
 - [x] Add progress bar
+- [x] Opacity transition when hovering over projects
 - [ ] Create case study for all projects
-- [ ] Opacity transition when hovering over projects
 - [ ] Share functionality
