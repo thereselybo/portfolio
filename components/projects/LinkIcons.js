@@ -8,28 +8,44 @@ import {
   faExternalLinkAlt,
 } from "@fortawesome/free-solid-svg-icons";
 
-function LinkIcons(props) {
-  let github = props.github_repo ? props.github_repo : "";
-  let live = props.live_project ? props.live_project : "";
+function LinkIcons(links) {
+  const { case_study, github_repo, live_project } = links;
+
   return (
     <Row className="text-center justify-content-center link-icons my-4 mx-auto">
-      <Link href={github}>
-        <a className="mx-4">
-          <div className="icon-wrapper">
-            <FontAwesomeIcon icon={faCode} className="fontAwesomeIcon p2" />
-          </div>
-        </a>
-      </Link>
-      <Link href={live}>
-        <a className="mx-4">
-          <div className="icon-wrapper">
-            <FontAwesomeIcon
-              icon={faExternalLinkAlt}
-              className="fontAwesomeIcon"
-            />
-          </div>
-        </a>
-      </Link>
+      {case_study && (
+        <Link href={case_study}>
+          <a className="mx-4">
+            <div className="icon-wrapper">
+              <FontAwesomeIcon
+                icon={faSearchPlus}
+                className="fontAwesomeIcon"
+              />
+            </div>
+          </a>
+        </Link>
+      )}
+      {github_repo && (
+        <Link href={github_repo}>
+          <a className="mx-4">
+            <div className="icon-wrapper">
+              <FontAwesomeIcon icon={faCode} className="fontAwesomeIcon p2" />
+            </div>
+          </a>
+        </Link>
+      )}
+      {live_project && (
+        <Link href={live_project}>
+          <a className="mx-4">
+            <div className="icon-wrapper">
+              <FontAwesomeIcon
+                icon={faExternalLinkAlt}
+                className="fontAwesomeIcon"
+              />
+            </div>
+          </a>
+        </Link>
+      )}
     </Row>
   );
 }

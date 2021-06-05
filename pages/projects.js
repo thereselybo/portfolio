@@ -29,7 +29,7 @@ export default function Projects() {
           title="ShadowBall"
           techs={["HTML", "CSS", "Bootstrap", "JavaScript", "IxD"]}
           intro="The object is to redesign and rebuild a website based on IxD principals combined with knowledge from previous courses The goal of this assignment is to practice skills acquired from the Interaction Design course, as well as those from HTML, CSS and JavaScript."
-          case_study="#"
+          case_study=""
           github_repo="https://github.com/thereselybo/shadowball"
           live_project="http://lybo.dev/ixd/ca-v2"
           image="/images/shadowball-desktop.jpg"
@@ -39,7 +39,7 @@ export default function Projects() {
           title="Flower Power"
           techs={["HTML", "CSS", "Javascript", "CMS"]}
           intro="The goal of this project is to use the WordPress REST API to create a website displaying a list of products. The products page should be a standalone site, written using HTML, CSS and JavaScript, and include a list of all the: product names, images and prices. Each product should have a call-to-action button to 'View More'."
-          case_study="#"
+          case_study=""
           github_repo="https://github.com/thereselybo/flower-power"
           live_project="https://lybo.dev/cms/ca/"
           image="/images/flowerpower-screenshot.jpg"
@@ -59,7 +59,7 @@ export default function Projects() {
           title="Re-Cycle"
           techs={["HTML", "CSS", "Javascript"]}
           intro="The goal is to build a responsive website for a company that offer eco-friendly, guided cycling tours of a town. It should have 4 pages: home page, about us, contact us, and the list of routes/tours."
-          case_study="#"
+          case_study=""
           github_repo="https://github.com/thereselybo/re-cycle"
           live_project="https://lybo.dev/htmlcss/ca-v2/"
           image="/images/recycle-collection.jpg"
