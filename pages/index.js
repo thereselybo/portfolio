@@ -23,7 +23,7 @@ export default function Home({ posts }) {
         <Fade bottom>
           <Techs />
         </Fade>
-        <Fade bottom>
+        {/* <Fade bottom>
           <Container>
             <h2>Blog posts</h2>
             <Row className="mb-5 blog-posts">
@@ -49,7 +49,7 @@ export default function Home({ posts }) {
               )}
             </Row>
           </Container>
-        </Fade>
+        </Fade> */}
       </div>
     </Layout>
   );

@@ -24,7 +24,7 @@ function Project(props) {
             <Card.Subtitle className="project-techs">{techs}</Card.Subtitle>
             <Card.Text className="mt-3">{props.intro}</Card.Text>
             <LinkIcons
-              case_study={props.case_study}
+              // case_study={props.case_study}
               github_repo={props.github_repo}
               live_project={props.live_project}
             />
@@ -60,7 +60,7 @@ function Project(props) {
                     }`}
                   >
                     <LinkIcons
-                      case_study={props.case_study}
+                      // case_study={props.case_study}
                       github_repo={props.github_repo}
                       live_project={props.live_project}
                     />

@@ -43,10 +43,10 @@ Starts a Next.js production server
 - [x] Build and style projects
 - [x] Fade in animation
 - [x] Active state nav items
+- [x] Deploy
 - [x] Add progress bar
 - [ ] Create case study for all projects
 - [ ] Reformat sass color variables
 - [ ] Opacity transition when hovering over projects
 - [ ] Add API key restrictions to Google maps API
 - [ ] Share functionality
-- [ ] Deploy
