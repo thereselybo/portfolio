@@ -14,7 +14,7 @@ The result is a microsite for SpaceX contains four pages; Home, Missions, Contac
 
 ### Final product
 
-[https://lybo.dev/projex1](https://lybo.dev/projex1)
+[https://spacex.lybo.dev](https://spacex.lybo.dev)
 
 ### Github Repo
 

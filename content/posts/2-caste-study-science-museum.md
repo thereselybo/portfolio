@@ -16,7 +16,7 @@ In later time the project has been updated and improved to include skills such a
 
 ### Final product, updated version
 
-[https://lybo.dev/semproj1-v2/](https://lybo.dev/semproj1-v2/)
+[https://sciencemuseum.lybo.dev](https://sciencemuseum.lybo.dev)
 
 ### Github Repo
 
