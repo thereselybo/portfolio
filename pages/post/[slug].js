@@ -6,6 +6,7 @@ import ReactMarkdown from "react-markdown/with-html";
 import Layout from "../../components/layout/Layout";
 import { Container, Card } from "react-bootstrap";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
+import Fade from "react-reveal/Fade";
 
 const CodeBlock = ({ language, value }) => {
   return <SyntaxHighlighter language={language}>{value}</SyntaxHighlighter>;
@@ -16,13 +17,15 @@ const Post = ({ content }) => {
     <Layout title="Blog">
       <article>
         <Container className="blog">
-          <Card className="p-4">
-            <ReactMarkdown
-              escapeHtml={false}
-              source={content}
-              renderers={{ code: CodeBlock }}
-            />
-          </Card>
+          <Fade bottom>
+            <Card className="p-4">
+              <ReactMarkdown
+                escapeHtml={false}
+                source={content}
+                renderers={{ code: CodeBlock }}
+              />
+            </Card>
+          </Fade>
         </Container>
       </article>
     </Layout>
