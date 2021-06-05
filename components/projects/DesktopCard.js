@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import { Card, Col, Row } from "react-bootstrap";
 import LinkIcons from "./LinkIcons";
 import Fade from "react-reveal/Fade";
+import { formatTechs } from "../../utils/formatTechs";
 
 const DesktopCard = ({ project }) => {
   const {
@@ -16,14 +17,9 @@ const DesktopCard = ({ project }) => {
   } = project;
 
   const [isVisible, setIsVisible] = useState(false);
-  const formattedTechs = techs.map((tech, i) => {
-    return (
-      <span>
-        {tech.title} {i < techs.length - 1 ? " | " : ""}
-      </span>
-    );
-  });
-  //   project.techs = techs;
+
+  const formattedTechs = formatTechs(techs);
+
   return (
     <Fade bottom>
       <Card

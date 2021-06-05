@@ -1,6 +1,7 @@
 import { Card } from "react-bootstrap";
 import LinkIcons from "./LinkIcons";
 import Fade from "react-reveal/Fade";
+import { formatTechs } from "../../utils/formatTechs";
 
 const MobileCard = ({ project }) => {
   const {
@@ -13,13 +14,8 @@ const MobileCard = ({ project }) => {
     image_url,
   } = project;
 
-  const formattedTechs = techs.map((tech, i) => {
-    return (
-      <span>
-        {tech.title} {i < techs.length - 1 ? " | " : ""}
-      </span>
-    );
-  });
+  const formattedTechs = formatTechs(techs);
+
   return (
     <Fade bottom>
       <Card className="card-vertical mb-5 d-block d-md-none">
