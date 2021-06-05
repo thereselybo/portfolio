@@ -24,7 +24,6 @@ Starts a Next.js production server
 ## Resources
 
 - The blog section was created using [this article](https://jfelix.info/blog/how-to-make-a-static-blog-with-next-js)
-- The project component was made from [this article](https://www.framer.com/blog/posts/react-portfolio/)
 - The hover functionality on projects was made from [this article](https://upmostly.com/tutorials/react-onhover-event-handling-with-examples)
 - The contact form was built with [KwesForms](https://kwes.io/)
 - Typewriter effect from [TypewriterJS](https://github.com/tameemsafi/typewriterjs#readme)
@@ -42,7 +41,5 @@ Starts a Next.js production server
 - [x] Deploy
 - [x] Add progress bar
 - [ ] Create case study for all projects
-- [ ] Reformat sass color variables
 - [ ] Opacity transition when hovering over projects
-- [ ] Add API key restrictions to Google maps API
 - [ ] Share functionality
