@@ -7,8 +7,10 @@ import About from "../components/home/About";
 import Techs from "../components/home/Techs";
 import Fade from "react-reveal/Fade";
 import BlogPosts from "../components/home/BlogPosts";
+import { BASE_URL, TECHS_ENDPOINT } from "../constants/api";
+import axios from "axios";
 
-const Home = ({ posts }) => {
+const Home = ({ posts, techs }) => {
   return (
     <Layout>
       <Head>
@@ -19,7 +21,7 @@ const Home = ({ posts }) => {
           <About />
         </Fade>
         <Fade bottom>
-          <Techs />
+          <Techs techs={techs} />
         </Fade>
         <Fade bottom>
           <BlogPosts posts={posts} />
@@ -56,9 +58,21 @@ export const getStaticProps = async () => {
     };
   });
 
+  let techs = [];
+
+  const url = `${BASE_URL}${TECHS_ENDPOINT}`;
+
+  try {
+    const res = await axios.get(url);
+    techs = res.data.techs;
+  } catch (err) {
+    console.log(err);
+  }
+
   return {
     props: {
       posts,
+      techs,
     },
   };
 };
