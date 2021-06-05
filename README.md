@@ -2,11 +2,7 @@
 
 ## Start project
 
-Before starting project, please run:
-
-### `npm install`
-
-### `npm i --save-dev gray-matter react-markdown`
+Before starting project, please run `npm i`.
 
 ## Available Scripts
 
