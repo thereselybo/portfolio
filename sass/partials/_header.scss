@@ -16,6 +16,12 @@ header {
       transform: scaleX(1.25);
       transition: ease-in 0.15s;
     }
+
+    @media screen and (max-width: 767px) {
+      width: max-content;
+      margin: 1rem auto;
+      transform: scale(1.5);
+    }
   }
 
   .nav-link.active:after {
@@ -24,12 +30,20 @@ header {
     transform: scaleX(1.25);
   }
 
-  .navbar-light .navbar-toggler {
-    color: $primary;
+  .navbar-toggler {
+    // color: $primary;
     border: none;
+    &:focus {
+      outline-color: hsla($aquamarine-base, 42%, 64%, 50%);
+    }
   }
 
   .navbar-brand {
     border: none;
+  }
+
+  .navbar-toggler-icon {
+    background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='hsl(146, 45%, 62%)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    transform: scale(1.5);
   }
 }
