@@ -11,6 +11,7 @@ footer {
 
   .fontAwesomeIcon {
     height: 4rem;
+    width: auto !important;
     color: $aquamarine-light;
     transition: ease-in 0.15s;
     &:hover,
