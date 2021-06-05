@@ -1,21 +1,17 @@
-import Head from "next/head";
+import axios from "axios";
 import fs from "fs";
 import matter from "gray-matter";
+import { BASE_URL, TECHS_ENDPOINT } from "../constants/api";
 
-import Layout, { siteTitle } from "../components/layout/Layout";
+import Layout from "../components/layout/Layout";
 import About from "../components/home/About";
 import Techs from "../components/home/Techs";
 import Fade from "react-reveal/Fade";
 import BlogPosts from "../components/home/BlogPosts";
-import { BASE_URL, TECHS_ENDPOINT } from "../constants/api";
-import axios from "axios";
 
 const Home = ({ posts, techs }) => {
   return (
     <Layout>
-      <Head>
-        <title>{siteTitle}</title>
-      </Head>
       <div id="index">
         <Fade bottom>
           <About />

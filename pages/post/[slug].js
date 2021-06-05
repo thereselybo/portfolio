@@ -1,7 +1,7 @@
-import React from "react";
 import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
+
 import ReactMarkdown from "react-markdown/with-html";
 import Layout from "../../components/layout/Layout";
 import { Container, Card } from "react-bootstrap";
@@ -13,7 +13,7 @@ const CodeBlock = ({ language, value }) => {
 
 const Post = ({ content }) => {
   return (
-    <Layout>
+    <Layout title="Blog">
       <article>
         <Container className="blog">
           <Card className="p-4">

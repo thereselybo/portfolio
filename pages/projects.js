@@ -1,18 +1,14 @@
 import axios from "axios";
+import { BASE_URL, PROJECTS_ENDPOINT } from "../constants/api";
 
-import Head from "next/head";
 import Layout from "../components/layout/Layout";
 import { Card, Container } from "react-bootstrap";
 import Project from "../components/projects/Project.js";
 import Fade from "react-reveal/Fade";
-import { BASE_URL, PROJECTS_ENDPOINT } from "../constants/api";
 
 const Projects = ({ projects }) => {
   return (
-    <Layout>
-      <Head>
-        <title>Projects</title>
-      </Head>
+    <Layout title="Projects">
       <Container className="projects">
         <Fade bottom>
           <h1>Projects</h1>

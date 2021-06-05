@@ -1,6 +1,7 @@
-import React, { useEffect } from "react";
-import { Card, Form, Col, Row, Button } from "react-bootstrap";
+import { useEffect } from "react";
 import kwesforms from "kwesforms";
+
+import { Card, Form, Col, Row, Button } from "react-bootstrap";
 
 const ContactForm = () => {
   useEffect(() => {

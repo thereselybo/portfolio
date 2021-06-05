@@ -1,14 +1,10 @@
 import Layout from "../components/layout/Layout";
-import Head from "next/head";
 import Fade from "react-reveal/Fade";
-import { Container, Row, Col, Card, Button } from "react-bootstrap";
+import { Container } from "react-bootstrap";
 
-export default function FourOhFour() {
+const FourOhFour = () => {
   return (
-    <Layout>
-      <Head>
-        <title>404 Error</title>
-      </Head>
+    <Layout title="404 Error">
       <div id="error-page">
         <Container className="text-center">
           <Fade bottom>
@@ -27,4 +23,6 @@ export default function FourOhFour() {
       </div>
     </Layout>
   );
-}
+};
+
+export default FourOhFour;

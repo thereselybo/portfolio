@@ -1,7 +1,8 @@
+import { formatTechs } from "../../utils/formatTechs";
+
 import { Card } from "react-bootstrap";
 import LinkIcons from "./LinkIcons";
 import Fade from "react-reveal/Fade";
-import { formatTechs } from "../../utils/formatTechs";
 
 const MobileCard = ({ project }) => {
   const {
