@@ -3,7 +3,7 @@ import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
 import ReactMarkdown from "react-markdown/with-html";
-import Layout from "../../components/Layout";
+import Layout from "../../components/layout/Layout";
 import { Container, Card } from "react-bootstrap";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 
@@ -11,7 +11,7 @@ const CodeBlock = ({ language, value }) => {
   return <SyntaxHighlighter language={language}>{value}</SyntaxHighlighter>;
 };
 
-export default function Post({ content, frontmatter }) {
+export default function Post({ content }) {
   return (
     <Layout>
       <article>

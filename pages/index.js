@@ -1,14 +1,12 @@
 import Head from "next/head";
-import Link from "next/link";
-
-import Layout, { siteTitle } from "../components/Layout";
-import About from "../components/About";
-import Techs from "../components/Techs";
-
 import fs from "fs";
 import matter from "gray-matter";
-import { Container, Row, Col, Card, Button } from "react-bootstrap";
+
+import Layout, { siteTitle } from "../components/layout/Layout";
+import About from "../components/home/About";
+import Techs from "../components/home/Techs";
 import Fade from "react-reveal/Fade";
+import BlogPosts from "../components/home/BlogPosts";
 
 export default function Home({ posts }) {
   return (
@@ -23,33 +21,9 @@ export default function Home({ posts }) {
         <Fade bottom>
           <Techs />
         </Fade>
-        {/* <Fade bottom>
-          <Container>
-            <h2>Blog posts</h2>
-            <Row className="mb-5 blog-posts">
-              {posts.map(
-                ({ frontmatter: { title, description, date }, slug }) => (
-                  <Col xs={12} md={4} key={title}>
-                    <Card className="mb-3">
-                      <Card.Body>
-                        <Link href={"/post/[slug]"} as={`/post/${slug}`}>
-                          <a>
-                            <Card.Title>{title}</Card.Title>
-                          </a>
-                        </Link>
-                        <Card.Subtitle>{date}</Card.Subtitle>
-                        <Card.Text className="mt-3">{description}</Card.Text>
-                        <Link href={"/post/[slug]"} as={`/post/${slug}`}>
-                          <Button className="reg-btn">Read more</Button>
-                        </Link>
-                      </Card.Body>
-                    </Card>
-                  </Col>
-                )
-              )}
-            </Row>
-          </Container>
-        </Fade> */}
+        <Fade bottom>
+          <BlogPosts posts={posts} />
+        </Fade>
       </div>
     </Layout>
   );

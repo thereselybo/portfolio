@@ -1,8 +1,8 @@
 import React from "react";
 import Head from "next/head";
-import Layout from "../../components/Layout";
+import Layout from "../components/layout/Layout";
 import { Container } from "react-bootstrap";
-import Project from "./Project.js";
+import Project from "../components/projects/Project.js";
 import Fade from "react-reveal/Fade";
 
 export default function Projects() {
