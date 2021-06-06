@@ -1,6 +1,9 @@
 .techs {
   .card {
-    padding: 2rem 5rem;
+    padding: 2rem 1.5rem;
+    @media screen and (min-width: 600px) {
+      padding: 2rem 5rem;
+    }
   }
   ul {
     margin: 0;

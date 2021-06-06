@@ -14,7 +14,7 @@ const LinkIcons = (links) => {
     <Row className="text-center justify-content-center link-icons my-4 mx-auto">
       {case_study && (
         <Link href={case_study}>
-          <a className="mx-4">
+          <a>
             <div className="icon-wrapper">
               <FontAwesomeIcon
                 icon={faSearchPlus}
@@ -26,7 +26,7 @@ const LinkIcons = (links) => {
       )}
       {github_repo && (
         <Link href={github_repo}>
-          <a className="mx-4">
+          <a>
             <div className="icon-wrapper">
               <FontAwesomeIcon icon={faCode} className="fontAwesomeIcon p2" />
             </div>
@@ -35,7 +35,7 @@ const LinkIcons = (links) => {
       )}
       {live_project && (
         <Link href={live_project}>
-          <a className="mx-4">
+          <a>
             <div className="icon-wrapper">
               <FontAwesomeIcon
                 icon={faExternalLinkAlt}
